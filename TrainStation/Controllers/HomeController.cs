@@ -1,8 +1,8 @@
-﻿using Lab1.Models;
+﻿using TrainStation.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Lab1.Controllers
+namespace TrainStation.Controllers
 {
     public class HomeController : Controller
     {
