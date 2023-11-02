@@ -8,7 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
+    <PackageReference Include="NLog" Version="5.2.5" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.5" />
 	<ProjectReference Include="..\TrainStation.Services\TrainStation.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logs\" />
   </ItemGroup>
 
 </Project>
