@@ -5,7 +5,11 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainStation", "TrainStation\TrainStation.csproj", "{E3FF1EEC-4301-44C5-8902-3B74DCABA560}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainStation.Services", "TrainStation.Services\TrainStation.Services.csproj", "{7C1BF3AA-B575-4782-BAF1-6FCDE9212626}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainStation.Services", "TrainStation.Services\TrainStation.Services.csproj", "{7C1BF3AA-B575-4782-BAF1-6FCDE9212626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{547F5259-5BBB-432A-AD6C-7E90BE171A6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{BC298903-5D57-4850-A6D1-D01774842AD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{7C1BF3AA-B575-4782-BAF1-6FCDE9212626}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C1BF3AA-B575-4782-BAF1-6FCDE9212626}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C1BF3AA-B575-4782-BAF1-6FCDE9212626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{547F5259-5BBB-432A-AD6C-7E90BE171A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{547F5259-5BBB-432A-AD6C-7E90BE171A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{547F5259-5BBB-432A-AD6C-7E90BE171A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{547F5259-5BBB-432A-AD6C-7E90BE171A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC298903-5D57-4850-A6D1-D01774842AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC298903-5D57-4850-A6D1-D01774842AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC298903-5D57-4850-A6D1-D01774842AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC298903-5D57-4850-A6D1-D01774842AD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

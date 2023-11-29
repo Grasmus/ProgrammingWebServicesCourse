@@ -17,4 +17,12 @@
     <Folder Include="Logs\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Files\viewFile.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Files\viewFile.cshtml" />
+  </ItemGroup>
+
 </Project>

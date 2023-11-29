@@ -6,13 +6,14 @@ using TrainStation.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.Configure<EmailConfiguration>(builder.Configuration.GetSection(nameof(EmailConfiguration)));
-builder.Services.AddScoped<IEmailSender, EmailSender>();
-builder.Logging.ClearProviders();
-builder.Host.UseNLog();
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.Configure<EmailConfiguration>(builder.Configuration.GetSection(nameof(EmailConfiguration)));
+builder.Services.AddScoped<IEmailSender, EmailSender>();
+builder.Services.AddScoped<IFileService, FileService>();
+builder.Logging.ClearProviders();
+builder.Host.UseNLog();
 
 var app = builder.Build();
 
