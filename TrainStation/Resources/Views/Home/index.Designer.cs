@@ -61,6 +61,51 @@ namespace TrainStation.Resources.Views.Home {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Buy a ticket.
+        /// </summary>
+        public static string BuyTicket {
+            get {
+                return ResourceManager.GetString("BuyTicket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Day after tomorrow.
+        /// </summary>
+        public static string DayAfterTomorrow {
+            get {
+                return ResourceManager.GetString("DayAfterTomorrow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Departure date.
+        /// </summary>
+        public static string DepartureDate {
+            get {
+                return ResourceManager.GetString("DepartureDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Departure time.
+        /// </summary>
+        public static string DepartureTime {
+            get {
+                return ResourceManager.GetString("DepartureTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        public static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Email is not valid..
         /// </summary>
         public static string EmailNotValid {
@@ -97,6 +142,87 @@ namespace TrainStation.Resources.Views.Home {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to From.
+        /// </summary>
+        public static string From {
+            get {
+                return ResourceManager.GetString("From", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kyiv.
+        /// </summary>
+        public static string HotCity1 {
+            get {
+                return ResourceManager.GetString("HotCity1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lviv.
+        /// </summary>
+        public static string HotCity2 {
+            get {
+                return ResourceManager.GetString("HotCity2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Przemyśl.
+        /// </summary>
+        public static string HotCity3 {
+            get {
+                return ResourceManager.GetString("HotCity3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dnipro-Main.
+        /// </summary>
+        public static string HotCity4 {
+            get {
+                return ResourceManager.GetString("HotCity4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Odesa.
+        /// </summary>
+        public static string HotCity5 {
+            get {
+                return ResourceManager.GetString("HotCity5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Buy ticket.
+        /// </summary>
+        public static string MakeTicket {
+            get {
+                return ResourceManager.GetString("MakeTicket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Middlename.
+        /// </summary>
+        public static string Middlename {
+            get {
+                return ResourceManager.GetString("Middlename", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Notify Me!.
         /// </summary>
         public static string Notify {
@@ -111,6 +237,42 @@ namespace TrainStation.Resources.Views.Home {
         public static string Questions {
             get {
                 return ResourceManager.GetString("Questions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Surname.
+        /// </summary>
+        public static string Surname {
+            get {
+                return ResourceManager.GetString("Surname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To.
+        /// </summary>
+        public static string To {
+            get {
+                return ResourceManager.GetString("To", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Today.
+        /// </summary>
+        public static string Today {
+            get {
+                return ResourceManager.GetString("Today", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tomorrow.
+        /// </summary>
+        public static string Tomorrow {
+            get {
+                return ResourceManager.GetString("Tomorrow", resourceCulture);
             }
         }
         

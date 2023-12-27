@@ -1,10 +1,14 @@
+using FluentValidation;
 using Microsoft.AspNetCore.Localization;
 using NLog.Web;
 using System.Globalization;
+using TrainStation.DTOs;
+using TrainStation.Entities;
 using TrainStation.Middlewares;
 using TrainStation.Services;
 using TrainStation.Services.Configurations;
 using TrainStation.Services.Interfaces;
+using TrainStation.Validation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +36,10 @@ builder.Services.Configure<EmailConfiguration>(builder.Configuration.GetSection(
 
 builder.Services.AddScoped<IEmailSender, EmailSender>();
 builder.Services.AddScoped<IFileService, FileService>();
+
+builder.Services.AddScoped<IValidator<Ticket>, TicketValidator>();
+builder.Services.AddScoped<IValidator<TicketDTO>, TicketDTOValidator>();
+
 builder.Logging.ClearProviders();
 builder.Host.UseNLog();
 

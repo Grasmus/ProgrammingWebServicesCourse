@@ -117,6 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BuyTicket" xml:space="preserve">
+    <value>Купити квиток</value>
+  </data>
+  <data name="DayAfterTomorrow" xml:space="preserve">
+    <value>Післязавтра</value>
+  </data>
+  <data name="DepartureDate" xml:space="preserve">
+    <value>Дата відправлення</value>
+  </data>
+  <data name="DepartureTime" xml:space="preserve">
+    <value>Час відправлення від</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Електронна пошта</value>
+  </data>
   <data name="EmailNotValid" xml:space="preserve">
     <value>Пошта не дійсна.</value>
   </data>
@@ -129,11 +144,50 @@
   <data name="ErrorSendingMessage" xml:space="preserve">
     <value>Помилка надсилання повідомлення!</value>
   </data>
+  <data name="From" xml:space="preserve">
+    <value>Звідки</value>
+  </data>
+  <data name="HotCity1" xml:space="preserve">
+    <value>Київ</value>
+  </data>
+  <data name="HotCity2" xml:space="preserve">
+    <value>Львів</value>
+  </data>
+  <data name="HotCity3" xml:space="preserve">
+    <value>Пшемисль</value>
+  </data>
+  <data name="HotCity4" xml:space="preserve">
+    <value>Дніпро-Головний</value>
+  </data>
+  <data name="HotCity5" xml:space="preserve">
+    <value>Одеса</value>
+  </data>
+  <data name="MakeTicket" xml:space="preserve">
+    <value>Купити квиток</value>
+  </data>
+  <data name="Middlename" xml:space="preserve">
+    <value>По-батькові</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Ім'я</value>
+  </data>
   <data name="Notify" xml:space="preserve">
     <value>Повідомляти мене!</value>
   </data>
   <data name="Questions" xml:space="preserve">
     <value>Маєте питання?</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Прізвище</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Куди</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Сьогодні</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>Завтра</value>
   </data>
   <data name="TrainStation" xml:space="preserve">
     <value>Залізнична станція</value>

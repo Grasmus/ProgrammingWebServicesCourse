@@ -1,5 +1,5 @@
 @using Microsoft.AspNetCore.Mvc.Localization;
-@model TrainStation.DTOs.EmailDTO
+@model TrainStation.Models.HomeViewModel
 
 @inject IViewLocalizer Localizer
 @{
@@ -9,15 +9,146 @@
     ViewData["EmailNotValid"] = Localizer["EmailNotValid"];
     ViewData["ErrorSendingMessage"] = Localizer["ErrorSendingMessage"];
     ViewData["EmailAddress"] = Localizer["EmailAddress"];
+    ViewData["BuyTicket"] = Localizer["BuyTicket"];
+    ViewData["DayAfterTomorrow"] = Localizer["DayAfterTomorrow"];
+    ViewData["DepartureDate"] = Localizer["DepartureDate"];
+    ViewData["DepartureTime"] = Localizer["DepartureTime"];
+    ViewData["From"] = Localizer["From"];
+    ViewData["HotCity1"] = Localizer["HotCity1"];
+    ViewData["HotCity2"] = Localizer["HotCity2"];
+    ViewData["HotCity3"] = Localizer["HotCity3"];
+    ViewData["HotCity4"] = Localizer["HotCity4"];
+    ViewData["HotCity5"] = Localizer["HotCity5"];
+    ViewData["To"] = Localizer["To"];
+    ViewData["Today"] = Localizer["Today"];
+    ViewData["Tomorrow"] = Localizer["Tomorrow"];
     ViewData["TrainStation"] = Localizer["TrainStation"];
+    ViewData["MakeTicket"] = Localizer["MakeTicket"];
+    ViewData["Name"] = Localizer["Name"];
+    ViewData["Surname"] = Localizer["Surname"];
+    ViewData["Middlename"] = Localizer["Middlename"];
+    ViewData["Email"] = Localizer["Email"];
 }
 
 <!DOCTYPE html>
 <html>
     <body id="page-top">
-        <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
+    <section class="projects-section container bg-light" id="projects">
+        @using (Html.BeginForm("CreateTicket", "Home", FormMethod.Post, new { @class = "container" }))
+        {
+            <div class="container">
+                <h1>@ViewData["BuyTicket"]</h1>
+            </div>
 
+            <div class="container row mt-3">
+                <div class="col">
+                    <div class="title">@ViewData["From"]</div>
+
+                    @Html.TextBoxFor(model => model.TicketDTO.From, new { @class = "form-control", @type = "text", @value = "" })
+
+                    <div>
+                        <a href="#" tabindex="-1" role="button">@ViewData["HotCity1"]</a>
+                        <a href="#" tabindex="-1" role="button">@ViewData["HotCity2"]</a>
+                        <a href="#" tabindex="-1" role="button">@ViewData["HotCity3"]</a>
+                        <a href="#" tabindex="-1" role="button">@ViewData["HotCity4"]</a>
+                        <a href="#" tabindex="-1" role="button">@ViewData["HotCity5"]</a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="title">@ViewData["To"]</div>
+
+                    @Html.TextBoxFor(model => model.TicketDTO.To, new { @class = "form-control", @type = "text", @value = "" })
+
+                    <div>
+                        <a href="#" tabindex="-1" role="button">@ViewData["HotCity1"]</a>
+                        <a href="#" tabindex="-1" role="button">@ViewData["HotCity2"]</a>
+                        <a href="#" tabindex="-1" role="button">@ViewData["HotCity3"]</a>
+                        <a href="#" tabindex="-1" role="button">@ViewData["HotCity4"]</a>
+                        <a href="#" tabindex="-1" role="button">@ViewData["HotCity5"]</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container row mt-3">
+                <div class="col">
+                    <div class="title">@ViewData["DepartureDate"]</div>
+
+                    @Html.TextBoxFor(model => model.TicketDTO.DepartureDate, new { @class = "form-control", @type = "date", @value = "" })
+
+                    <div class="link">
+                        <a href="#" role="button">@ViewData["Today"]</a>
+                        <a href="#" role="button">@ViewData["Tomorrow"]</a>
+                        <a href="#" role="button">@ViewData["DayAfterTomorrow"]</a>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <span>@ViewData["DepartureTime"]</span>
+                    
+                    <div class="select">
+                        <select class="form-control" asp-for="TicketDTO.DepartureTime">
+                            <option value="00:00">00:00</option>
+                            <option value="01:00">01:00</option>
+                            <option value="02:00">02:00</option>
+                            <option value="03:00">03:00</option>
+                            <option value="04:00">04:00</option>
+                            <option value="05:00">05:00</option>
+                            <option value="06:00">06:00</option>
+                            <option value="07:00">07:00</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container row mt-3">
+                <div class="col">
+                    <div class="title">@ViewData["Name"]</div>
+                    @Html.TextBoxFor(model => model.TicketDTO.Name, new { @class = "form-control", @type = "text", @value = "" })
+                </div>
+
+                <div class="col">
+                    <div class="title">@ViewData["Surname"]</div>
+                    @Html.TextBoxFor(model => model.TicketDTO.Middlename, new { @class = "form-control", @type = "text", @value = "" })
+                </div>
+
+                <div class="col">
+                    <div class="title">@ViewData["Middlename"]</div>
+                    @Html.TextBoxFor(model => model.TicketDTO.Surname, new { @class = "form-control", @type = "text", @value = "" })
+                </div>
+            </div>
+
+            <div class="container row mt-3">
+                <div class="col">
+                    <div class="title">@ViewData["Email"]</div>
+                    @Html.TextBoxFor(model => model.TicketDTO.Email, new { @class = "form-control", @type = "email", @value = "" })
+                </div>
+            </div>
+
+            <div class="container row mt-3">
+                <div class="col">
+                    <button class="btn btn-primary" id="submitButton" type="submit">@ViewData["MakeTicket"]</button>
+                </div>
+            </div>
+
+            <p>@ViewBag.ErrorMessage</p>
+        }
         </section>
         <!-- Signup-->
         <section class="signup-section" id="signup">
@@ -32,8 +163,8 @@
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
                                 <div class="col">
-                                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @id = "emailAddress", @type = "email", @placeholder = "Enter an email adress..." })
-                                    @Html.ValidationMessageFor(model => model.Email)
+                                    @Html.TextBoxFor(model => model.EmailDTO.Email, new { @class = "form-control", @id = "emailAddress", @type = "email", @placeholder = "Enter an email adress..." })
+                                    @Html.ValidationMessageFor(model => model.EmailDTO.Email)
                                 </div>
                                 <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit">@ViewData["Notify"]</button></div>
                             </div>

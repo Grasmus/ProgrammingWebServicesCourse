@@ -117,6 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BuyTicket" xml:space="preserve">
+    <value>Buy a ticket</value>
+  </data>
+  <data name="DayAfterTomorrow" xml:space="preserve">
+    <value>Day after tomorrow</value>
+  </data>
+  <data name="DepartureDate" xml:space="preserve">
+    <value>Departure date</value>
+  </data>
+  <data name="DepartureTime" xml:space="preserve">
+    <value>Departure time</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
   <data name="EmailNotValid" xml:space="preserve">
     <value>Email is not valid.</value>
   </data>
@@ -129,11 +144,50 @@
   <data name="ErrorSendingMessage" xml:space="preserve">
     <value>Error sending message!</value>
   </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="HotCity1" xml:space="preserve">
+    <value>Kyiv</value>
+  </data>
+  <data name="HotCity2" xml:space="preserve">
+    <value>Lviv</value>
+  </data>
+  <data name="HotCity3" xml:space="preserve">
+    <value>Przemyśl</value>
+  </data>
+  <data name="HotCity4" xml:space="preserve">
+    <value>Dnipro-Main</value>
+  </data>
+  <data name="HotCity5" xml:space="preserve">
+    <value>Odesa</value>
+  </data>
+  <data name="MakeTicket" xml:space="preserve">
+    <value>Buy ticket</value>
+  </data>
+  <data name="Middlename" xml:space="preserve">
+    <value>Middlename</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
   <data name="Notify" xml:space="preserve">
     <value>Notify Me!</value>
   </data>
   <data name="Questions" xml:space="preserve">
     <value>Have some questions?</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>Tomorrow</value>
   </data>
   <data name="TrainStation" xml:space="preserve">
     <value>Train Station</value>

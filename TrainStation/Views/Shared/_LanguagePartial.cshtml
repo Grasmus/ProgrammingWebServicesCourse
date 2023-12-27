@@ -15,7 +15,7 @@
           asp-route-returnUrl="@Context.Request.Path" method="post" class="nav-link">
         <select name="culture" onchange="this.form.submit();"
                 asp-for="@requestCulture.RequestCulture.UICulture.Name"
-                asp-items="cultureItems" class="form-select-sm">
+                asp-items="cultureItems" class="form-control">
         </select>
     </form>
 </div>

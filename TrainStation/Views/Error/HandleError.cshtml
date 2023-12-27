@@ -1,0 +1,10 @@
+﻿@model ErrorModel
+
+<div class="container p-4">
+    <div class="card p-4">
+        @foreach (string errorMessage in Model.ErrorMessages)
+        {
+            <p>@errorMessage</p>
+        }
+    </div>
+</div>
